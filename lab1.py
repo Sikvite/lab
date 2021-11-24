@@ -23,10 +23,7 @@ mas = [2, 3, 6, -1, 7, 13, -7, -7.2, 13.2, 1, 4]
 print(mas)
 print('Найменше додатнє з поданих чисел дорівнює')
 mas1 = mas.copy()
-for j in range(len(mas1)-1):
-  for k in range(j+1,len(mas1)):
-    if mas1[j]>mas1[k]:
-       mas1[j],mas1[k]=mas1[k],mas1[j]
+mas1.sort()
 print([x for x in mas1 if x > 0][0])
 print('Сума парних чисел з поданих дорівнює')
 s=0
