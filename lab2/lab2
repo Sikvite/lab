@@ -1,0 +1,12 @@
+import modulel2
+print ("Изначальный список", modulel2.spisok)
+print("Сортированный список", modulel2.sortdlist)
+modulel2.search()
+modulel2.sequence()
+print("Первые пять минимальных элементов:"), modulel2.fiveminel()
+print("Первые пять максимальных элементов:"), modulel2.fivemaxel()
+print("Среднее арифметическое:", modulel2.arith_mean())
+print("Список без повторных элементов:", [*modulel2.unique()])
+print("Наименьшее общее кратное:", modulel2.lcmm(modulel2.spisok))
+print("Повторения элементов:", modulel2.duplicate())
+print("Список с циклическим сдвигом: ", modulel2.shift())
